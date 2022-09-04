@@ -88,7 +88,7 @@ button.addEventListener('click', (event) => {
         erro_email.innerHTML = "</br>" + changeAP.textContent;
         email.focus();
     } else if (
-        emailValue.indexOf(".") - emailValue.indexOf("@") == 1 // o '.' vai na frente no '@'
+        emailValue.indexOf(".") - emailValue.indexOf("@") == 1 // o '.' vai na frente do '@'
     ) {
         erro_email.style.display = "block";
         erro_email.classList.remove("hide");
