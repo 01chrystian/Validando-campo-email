@@ -57,7 +57,7 @@ button.addEventListener('click', (event) => {
         password.focus();
 
     } else if (
-        emailValue.indexOf("@") == -1 // nao foi digitado
+        emailValue.indexOf("@") == -1 // não foi digitado
     ) {
         erro_email.style.display = "block";
         erro_email.classList.remove("hide");
@@ -65,14 +65,14 @@ button.addEventListener('click', (event) => {
         erro_email.innerHTML = "</br>" + searchArroba.textContent;
         email.focus();
     } else if (
-        emailValue.indexOf("gmail") - emailValue.indexOf("@") < 1 //verificando se digitaram gmail
+        emailValue.indexOf("gmail") - emailValue.indexOf("@") < 1 // verificando se digitaram gmail
     ) {
         erro_email.style.display = "block";
         erro_email.classList.remove("hide");
 
         erro_email.innerHTML = "</br>" + gmail.textContent;
         email.focus();
-    } else if (emailValue.indexOf(".") == -1 // nao foi digitado
+    } else if (emailValue.indexOf(".") == -1 // não foi digitado
     ) {
         erro_email.style.display = "block";
         erro_email.classList.remove("hide");
@@ -80,7 +80,7 @@ button.addEventListener('click', (event) => {
         erro_email.innerHTML = "</br>" + searchPonto.textContent;
         email.focus();
     } else if (
-        emailValue.indexOf(".") < emailValue.indexOf("@")  // 
+        emailValue.indexOf(".") < emailValue.indexOf("@")  // informando a ordem
     ) {
         erro_email.style.display = "block";
         erro_email.classList.remove("hide");
