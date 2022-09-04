@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: #d248a678;
+}
+
+#corpo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+#box {
+    font-family: 'Brush Script MT', cursive;
+    margin-top: 100px;
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+    border: 2px solid rgb(179, 172, 160);
+    border-radius: 10px;
+    filter: drop-shadow(7px 20px 9px #564d4d8a);
+    color:rgb(0, 0, 0);
+}
+
+#box-max {
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+
+h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#box-min {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.erro-email {
+    display: none;
+    font-size: 15px;
+    color: #ff0000;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.744);
+    top: 115.5px;
+    width: calc(100% - 100px);
+    text-align: center;
+    right: 50px;
+    margin-top: 10px;
+    height: 80px;
+    opacity: 1;
+    transition: opacity .5s linear;
+    border-radius: 5px;
+}
+
+.hide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+input[type="email"] {
+    width: 220px;
+    height: 40px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    border: 1px solid #ccc;
+    background-color: #ECE1E1;
+    padding: 0 10px
+}
+
+input[type="password"] {
+    width: 202px;
+    height: 40px;
+    border-radius: 9px;
+    outline: 0;
+    border: none;
+    border: 1px solid #ccc;
+    background-color: #ECE1E1;
+    padding: 0 10px;
+    padding-right: 30px !important
+}
+
+fieldset {
+    border: 2px solid rgb(187, 170, 170);
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+#button {
+    margin-top: 15px;
+    width: 242px;
+    height: 30px;
+    border: 2px solid rgb(179, 172, 160);
+    background-color: #cc2366;
+    border-radius: 10px;
+    color: #ccc;
+    font-size: medium;
+}
+
+button:hover {
+    transform: scale(1.05);
+    transition: all 1.5s;
+}
+
+input:hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        box-shadow: 0 5px 15px 0 rgba(0, 0, 0, .6);
+        transform: translatey(0)
+    }
+
+    50% {
+        box-shadow: 0 25px 15px 0 rgba(0, 0, 0, .2);
+        transform: translatey(-10px)
+    }
+}
+/* .efeito-flutuante {
+    animation: float 10s ease-in-out infinite;
+} */
+#app{
+    margin-top: 5px;
+    font-family: 'Brush Script MT', cursive;
+}
+.gp1 {
+    width: 100%;
+    height: 0px;
+    border-radius: 100px;
+    animation: float 4s ease-in-out infinite;
+    background-color: transparent;
+}
+
+.gp2 {
+    margin-left: 10px;
+    width: 100%;
+    height: 0px;
+    text-align: center;
+    border-radius: 100%;
+    animation: float 5s ease-in-out infinite;
+    background-color: transparent;
+}
+
+#box-2 {
+    display: flex;
+    font-family: 'Brush Script MT', cursive;
+}
+.errorInput{
+    border: 10px solid red;
+}
