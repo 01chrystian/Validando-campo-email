@@ -168,6 +168,3 @@ input:hover {
     display: flex;
     font-family: 'Brush Script MT', cursive;
 }
-.errorInput{
-    border: 10px solid red;
-}
